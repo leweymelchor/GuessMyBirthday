@@ -4,50 +4,32 @@ from random import randint
 
 name = input("Hi! What is your name? ")
 
-# Guess 1
+guess_number = 1
+guess_word = {
+    2: "second",
+    3: "third",
+    4: "fourth",
+    5: "fifth",
+}
+for guess_number in range(1, 6):
+    month = randint(1, 12)
+    year = randint(1924, 2019)
 
-month = randint(1, 12)
-year = randint(1924, 2019)
+    print("Guess", guess_number, ":", name, "were you born in",
+        month, "/", year, "?")
 
-print("Guess 1:", name, "were you born in",
-       month, "/", year, "?")
+    response = input("yes or no? ")
 
-response = input("yes or no? ")
-
-if response == "yes":
-    print("I knew it!")
-    exit()
-else:
-    print("Drat! Lemme try again!")
-
-# Guess 2
-
-month = randint(1, 12)
-year = randint(1924, 2019)
-
-print("Guess 2:", name, "were you born in",
-       month, "/", year, "?")
-
-response = input("yes or no? ")
-
-if response == "yes":
-    print("See, Second times the charm!")
-    exit()
-else:
-    print("Grrr! I'll get it this time!")
-
-# Guess 3
-
-month = randint(1, 12)
-year = randint(1924, 2019)
-
-print("Guess 3:", name, "were you born in",
-       month, "/", year, "?")
-
-response = input("yes or no? ")
-
-if response == "yes":
-    print("See, Third times the charm!")
-    exit()
-else:
-    print("I give up, you fooled me!")
+    if response == "yes" and guess_number > 1:
+        print("I knew it! See,", guess_word[guess_number], "times the charm!")
+        exit()
+    elif response == "yes":
+        print("I knew it!")
+        exit()
+    elif guess_number == 3:
+        print("Grrr! I'll get it this time!")
+    elif guess_number == 5:
+        print("I have better things to do. Smell-ya later")
+        exit()
+    else:
+        print("Drat! Lemme try again!")
