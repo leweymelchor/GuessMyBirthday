@@ -3,6 +3,11 @@
 ## Description
 A simple terminal game that will try to guess your birthday
 
+### See it in action below:
+
+https://user-images.githubusercontent.com/102191748/234697722-8166721f-3d72-4189-8432-d96ff00275d2.mov
+
+
 ## Run It
 - open the terminal at directory
 - type in
