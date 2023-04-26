@@ -7,7 +7,6 @@ A simple terminal game that will try to guess your birthday
 
 https://user-images.githubusercontent.com/102191748/234697722-8166721f-3d72-4189-8432-d96ff00275d2.mov
 
-
 ## Run It
 - open the terminal at directory
 - type in
@@ -17,7 +16,6 @@ https://user-images.githubusercontent.com/102191748/234697722-8166721f-3d72-4189
 - hit enter
 
 -to cancel the game press (control + c)
-
 
 ### Latest Updates:
 - fixed capital letter bug using .lower()
