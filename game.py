@@ -18,7 +18,7 @@ for guess_number in range(1, 6):
     print("Guess", guess_number, ":", name, "were you born in",
         month, "/", year, "?")
 
-    response = input("yes or no? ")
+    response = input("yes or no? ").lower()
 
     if response == "yes" and guess_number > 1:
         print("I knew it! See,", guess_word[guess_number], "times the charm!")
